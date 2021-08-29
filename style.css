@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap');
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    background-color: var(--pale-blue);
+    /* background-image: url('../images/pattern-background-desktop.svg') ;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover; */
+     min-height: 100vh;
+}
+
+a {text-decoration: none;}
+h1 {
+    font-size: 2rem;
+    color: var(--dark-blue);
+}
+p{
+    font-size: 1em;
+    color: var(--desaturated-blue);
+}
+
+/* Header */
+header{
+    background: url('/images/illustration-hero.svg') no-repeat center center/cover;
+    height: 200px;
+}
+main {
+    margin: 0 auto;
+     max-width: 400px;
+     width: 100%;
+    box-shadow: 0 5px  5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 20px;
+    background: #fff;    
+}
+section{
+    padding: 30px;
+    margin:10px 0;
+}
+.greyish {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--very-pale-blue);
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.greyish img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.greyish > div {
+    margin-left: -40px;
+    display: inline-flex;
+    flex-direction: column;
+}
+.greyish > div h5{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--dark-blue);
+}
+.greyish > div p{
+    margin-top: -20px;
+    font-size: 12px;
+    margin-left: -10px;
+}
+.greyish .underline{
+    text-decoration: underline;
+    font-size: 20px;
+    color: var(--bright-blue);
+}
+.greyish .underline:hover{
+    text-decoration: none;
+}
+span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px 0;
+}
+.btn{
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    padding: 15px 60px;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    background: var(--bright-blue);
+    color: #fff;
+    margin-bottom: 10px;
+
+}
+.btn:hover{
+    opacity: 0.6;
+}
+.cancel {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+   
+}
+.cancel:hover{
+    color: var(--dark-blue);
+}
+
