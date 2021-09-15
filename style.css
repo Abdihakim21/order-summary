@@ -18,11 +18,11 @@ body{
     text-align: center;
     margin: 0;
     background-color: var(--pale-blue);
-    /* background-image: url('../images/pattern-background-desktop.svg') ;
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover; */
-     min-height: 100vh;
+    min-height: 100vh;
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 60%;
 }
 
 a {text-decoration: none;}
@@ -37,17 +37,17 @@ p{
 
 /* Header */
 header{
-    background: url('/images/illustration-hero.svg') no-repeat center center/cover;
+    background: url('./images/illustration-hero.svg') no-repeat center center/cover;
     height: 200px;
 }
 main {
-    margin: 0 auto;
+    margin: 10px auto;
      max-width: 400px;
      width: 100%;
     box-shadow: 0 5px  5px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     border-radius: 20px;
-    background: #fff;    
+    background: #fff;   
 }
 section{
     padding: 30px;
@@ -126,3 +126,11 @@ span{
     color: var(--dark-blue);
 }
 
+@media (max-width:769px) {
+    body{
+        background-image: url('./images/pattern-background-mobile.svg');
+    }
+    main{
+        margin: 10px;
+    }
+}
